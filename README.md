@@ -7,8 +7,8 @@ An Android and web application aimed at boosting user motivation during study se
 <br></br>
 
 *****
-## File Hierarchy
-### Directories:
+## Directories and Features
+
 - AndroidApp -> Android application of the StudyBuddy project
   - User facing app interface which allows for usage of the StudyBuddy study app.
   - Contains these main parts and respective functionalities:
