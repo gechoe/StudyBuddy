@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- timer_progress_bar.xml -->
+    <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:id="@android:id/background">
+            <shape android:shape="rectangle">
+                <solid android:color="@color/black" />
+            </shape>
+        </item>
+        <item android:id="@android:id/progress">
+            <clip>
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/indigo_700" />
+                </shape>
+            </clip>
+        </item>
+    </layer-list>
+</selector>

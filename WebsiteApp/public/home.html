@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<!--
+    The home page for my Study Buddy admin website platform.
+-->
+
+<html>
+    <style>
+        body {
+            background-color: #e5e9ff; /* Change this to the desired background color */
+            margin: 100; /* Reset default margin */
+            padding: 0; /* Reset default padding */
+        }
+
+        .button {
+            color: #CBD3FF;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 16px;
+            margin: 3px;
+            transition-duration: 0.45s;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .buttonColor {
+            background-color: white; 
+            color: #4F62C5; 
+            border: 2px solid #4e67f3;
+        }
+
+        .buttonColor:hover {
+            background-color: #4e67f3;
+            color: white;
+        }
+
+        header {
+            width: 100%;
+            /* background-color: #A6B4FF; */
+            padding: 20px;
+            box-sizing: border-box; /* Include padding in width calculation */
+            text-align: center;
+        }
+
+        h1 {
+            color: #364AB2;
+            font-size: 36px;
+            margin-top: 50px;
+        }
+
+        h2 {
+            color: #5f75e1;
+            font-size: 28px;
+            margin-top: 20px;
+        }
+
+        section {
+            width: 100%;
+            text-align: center;
+            /* padding: 20px 0; */
+        }
+
+        .container {
+            height: 120px;
+            max-width: 100%;
+            position: relative;
+            border: 3px solid #A6B4FF;
+            background-color: #A6B4FF;
+            /* margin-top: 10px; */
+            margin-bottom: 40px;
+        }
+
+        .image-container {
+            text-align: center; /* Center the content horizontally within the container */
+            margin-top: 20px;
+        }
+
+        img {
+            max-width: 80%; /* Ensure image does not exceed container width */
+            height: auto;
+            border: 5px solid #afbcff;
+            margin-bottom: 10px;
+        }
+
+        .center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+    </style>
+
+    <body class="home-page">
+        <header id="title">
+            <h1>Study Buddy Manager</h1>
+            <h2>Admin Page</h2>
+        </header>
+
+        <section>
+            <div class="container">
+                <div class="center">
+                    <center>
+                        <a href="home.html"><button class="button buttonColor">Home Page</button></a>
+                        <a href="userAddForm.html"><button class="button buttonColor">Add User</button></a>
+                    </center>
+                </div>
+            </div>
+        </section>
+
+        <div class="image-container">
+            <img src="StudyBuddies.png" alt="StudyBuddies">
+        </div>
+        
+        <footer id="footnote">
+            <p class="copyright">&copy; gchoe (Grace Choe)</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Settings">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/circle_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/purpleBox"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/indigo_header"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-47dp">
+
+        <ImageButton
+            android:id="@+id/menuButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="6dp"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:maxWidth="60dp"
+            android:maxHeight="60dp"
+            android:onClick="onMenuButtonClick"
+            android:scaleType="fitCenter"
+            android:src="@drawable/menu"
+            app:tint="#364AB2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-47dp">
+
+        <ImageButton
+            android:id="@+id/settingPageButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="6dp"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:maxWidth="60dp"
+            android:maxHeight="60dp"
+            android:onClick="onSettingButtonClick"
+            android:scaleType="fitCenter"
+            android:src="@drawable/settings"
+            app:tint="#364AB2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/infoIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/info"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="230dp"
+            android:layout_marginTop="152dp"
+            android:layout_marginLeft="110dp"
+            app:tint="@color/indigo_650" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="135dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="        Information"
+            android:textAlignment="center"
+            android:textColor="@color/indigo_700"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/informationContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="Welcome to StudyBuddy! \n\nBoost your motivation with our timer, tasks list, shop, inventory, and trade features. Earn points for completing tasks and trade them for rewards. Get 10 points and unlock your own StudyBuddy companion! \n\nGet ready to start your study adventure!"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/profileButton"
+            android:layout_width="220dp"
+            android:layout_height="80dp"
+            android:backgroundTint="@color/indigo_600"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:onClick="onProfileButtonClick"
+            android:text="Profile"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="40dp"
+            app:layout_constraintBottom_toTopOf="@id/back_button" />
+
+        <Button
+            android:id="@+id/LogoutButton"
+            android:layout_width="220dp"
+            android:layout_height="80dp"
+            android:backgroundTint="@color/cerulean_600"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:onClick="onLogoutButtonClick"
+            android:text="Logout"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toTopOf="@id/back_button" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
