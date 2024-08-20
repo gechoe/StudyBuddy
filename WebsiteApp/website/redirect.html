@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<!--
+   Grace Choe
+	The success prompt for when a user is succesfully added/created or
+   deleted/removed from the database of users.
+   It has a button to go back to the last page.
+-->
+
+<html>
+   <style>
+      .button {
+         color: white;
+         padding: 10px 20px;
+         text-align: center;
+         font-size: 16px;
+         margin: 3px;
+         transition-duration: 0.45s;
+         cursor: pointer;
+      }
+
+      .buttonColor {
+         background-color: white; 
+         color: #4F62C5; 
+         border: 2px solid #4e67f3;
+      }
+
+      .buttonColor:hover {
+         background-color: #4e67f3;
+         color: white;
+      }
+
+      header {
+         width: 100%;
+         /* background-color: #A6B4FF; */
+         padding: 10px;
+         box-sizing: border-box; /* Include padding in width calculation */
+         text-align: center;
+      }
+
+      section {
+         display: inline-block;
+         margin: 1.5%;
+         width: 97%;
+      }
+
+      h1 {
+         color: #364AB2;
+         font-size: 22px;
+         margin-top: 50px;
+      }
+
+      .container {
+         height: 120px;
+         max-width: 100%;
+         position: relative;
+         border: 3px solid #A6B4FF;
+         background-color: #A6B4FF;
+         /* margin-top: 10px; */
+         margin-bottom: 40px;
+      }
+
+      .center {
+         margin: 0;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         -ms-transform: translate(-50%, -50%);
+         transform: translate(-50%, -50%);
+         display: flex; /* Added flex display */
+         justify-content: center; /* Center horizontally */
+         align-items: center;
+      }
+
+      .centerHori {
+         margin: 10;
+         position: absolute;
+         top: 10%;
+         left: 50%;
+         -ms-transform: translate(-50%, -50%);
+         transform: translate(-50%, -50%);
+      }
+
+      img {
+         height: auto;
+         max-width: 99%;
+         border: 5px solid #afbcff;
+      }
+   </style>
+
+   <body class="redirect-page">
+      <div id="main-content">
+         <header id="title">
+            <h1>The action was successfully completed.<br><br>Click a button to be redirected to another page.</h1>
+         </header>
+
+         <section>
+            <div class="container">
+               <div class="center">
+                  <a href="home.html"><button class="button buttonColor">Home Page</button></a>
+                  <a href="userAddForm.html"><button class="button buttonColor">Add User</button></a>
+                  <a href="deleteUsersList.html"><button class="button buttonColor">Delete User</button></a>
+                  <a href="allUsersList.html"><button class="button buttonColor">All Users</button></a>
+               </div>
+            </div>
+         </section>
+      </div>
+   </body>
+</html>

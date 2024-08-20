@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<!--
+   Grace Choe
+	The user add form page for my Study Buddy admin website platform to
+   add/create  a user to the users database.
+-->
+
+<html>
+   <style>
+      body {
+         /* background-color: #e5e9ff; Change this to the desired background color */
+         background-color: white;
+      }
+      
+      header {
+         width: 100%;
+         padding: 20px;
+         box-sizing: border-box; /* Include padding in width calculation */
+         text-align: center;
+      }
+
+      /* header {
+         width: 100%;
+         box-sizing: border-box; Include padding in width calculation
+         text-align: center;
+         height: auto; Adjusted height
+         max-width: 100%;
+         position: relative;
+         border: 3px solid #A6B4FF;
+         background-color: #A6B4FF;
+         display: flex;
+         flex-direction: column; Items stack vertically
+         justify-content: center;
+         align-items: center;
+         margin-top: 30px;
+      } */
+
+      /* header h {
+         margin: 0; Reset margin to remove default spacing
+         line-height: 1.5; Adjust line height for better readability
+      } */
+
+      h1 {
+         color: #364AB2;
+         font-size: 36px;
+         margin-top: 50px;
+         text-align: center;
+      }
+
+      h2 {
+         color: #5f75e1;
+         text-align: center;
+         margin-bottom: 30px;
+      }
+
+      label, p {
+         font-size: 18px; /* Adjust label font size */
+      }
+
+      p {
+         margin-top: 40px;
+      }
+
+      section {
+         width: 100%;
+         text-align: center;
+         /* padding: 20px 0; */
+      }
+
+      .container {
+         text-align: center;
+      }
+
+      .contain {
+         height: 120px;
+         max-width: 100%;
+         position: relative;
+         border: 3px solid #A6B4FF;
+         background-color: #A6B4FF;
+         /* margin-top: 10px; */
+         margin-bottom: 40px;
+      }
+
+      /* .button {
+         color: #CBD3FF;
+         padding: 10px 20px;
+         text-align: center;
+         font-size: 16px;
+         margin: 3px;
+         transition-duration: 0.45s;
+         cursor: pointer;
+         font-size: 18px;
+      }
+
+      .buttonColor {
+         background-color: #e5e9ff; 
+         color: #4F62C5; 
+         border: 2px solid #4F62C5;
+      }
+
+      .buttonColor:hover {
+         background-color: #4e67f3;
+         color: white;
+         border: 2px solid #4e67f3;
+      } */
+
+      .button {
+         color: #CBD3FF;
+         padding: 10px 20px;
+         text-align: center;
+         font-size: 16px;
+         margin: 3px;
+         transition-duration: 0.45s;
+         cursor: pointer;
+         font-size: 18px;
+      }
+
+      .buttonColor {
+         background-color: white; 
+         color: #4F62C5; 
+         border: 2px solid #4e67f3;
+      }
+
+      .buttonColor:hover {
+         background-color: #4e67f3;
+         color: white;
+      }
+
+      .buttons-container {
+         margin: 0;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         -ms-transform: translate(-50%, -50%);
+         transform: translate(-50%, -50%);
+         display: flex; /* Added flex display */
+         justify-content: center; /* Center horizontally */
+         align-items: center;
+      }
+   </style>
+
+   <body class="user-add-form-page">
+      <header id="title">
+         <h1>Add A User</h1>
+         <h2>Fill out the form below to add a user.</h2>
+      </header>
+
+      <section>
+            <div class="contain">
+               <div class="buttons-container">
+                  <a href="home.html"><button class="button buttonColor">Home Page</button></a>
+                  <a href="userAddForm.html"><button class="button buttonColor">Add User</button></a>
+                  <a href="deleteUsersList.html"><button class="button buttonColor">Delete User</button></a>
+                  <a href="allUsersList.html"><button class="button buttonColor">All Users</button></a>
+               </div>
+            </div>
+      </section>
+
+      <form action="/addUser" method="post">
+         <div class="container">
+            <p>Please fill out the form below to add a user:</p>
+      
+            <br><label for="username">Username: </label>
+            <input type="text" placeholder="Enter username" name="username" required></br>
+
+            <br><label for="password">Password: </label>
+            <input type="text" placeholder="Enter password: " name="password" required></br>
+
+            <br><div class="clearfix" style="font-size: 15px; margin-top: 20px;">
+               <input type="submit" value="Add New User" style="font-size: inherit; margin-right: 25px;">
+               <input type="button" value="Go Back" onclick="history.back()" style="font-size: inherit;">
+            </div></br>
+         </div>
+      </form>
+
+      <footer id="footnote">
+			<p class="copyright">&copy; gchoe (Grace Choe)</p>
+		</footer>
+   </body>
+</html>
